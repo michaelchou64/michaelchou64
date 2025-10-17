@@ -11,13 +11,22 @@
   </picture>
 
   <div>&nbsp;</div>
+  <div>&nbsp;</div>
 
+  [![Michael's current streak](https://streak-stats.demolab.com/?user=michaelchou64&count_private=true&theme=blue-green&title_color=00b3ff)](#)
+
+  <div>&nbsp;</div>
+  <div>&nbsp;</div>
+  
   <a href="https://github.com/anuraghazra/github-readme-stats">
     <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=michaelchou64&show_icons=true&theme=merko" />
   </a>
+
   <!-- <a href="https://github.com/anuraghazra/convoychat">
     <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=michaelchou64&layout=compact&langs_count=8&card_width=320" />
   </a> -->
+
+  <div>&nbsp;</div>
 
 </div> 
 
