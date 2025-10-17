@@ -3,7 +3,7 @@ name: generate animation
 on:
   # run automatically every 24 hours
   schedule:
-    - cron: "0 */24 * * *" 
+    - cron: "0 21 * * *" 
   
   # allows to manually run the job at any time
   workflow_dispatch:
@@ -15,16 +15,12 @@ on:
 
 jobs:
   generate:
+    permissions: 
+      contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     
     steps:
-      # Checkout the repository
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          
       # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
       - name: generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
@@ -33,52 +29,14 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+    
+      # push the content of <build_dir> to a branch
+      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
+      - name: push github-contribution-grid-snake.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-      # Check if dist directory exists and has files
-      - name: Verify generated files
-        run: |
-          if [ ! -d "dist" ]; then
-            echo "Error: dist directory not found"
-            exit 1
-          fi
-          if [ ! "$(ls -A dist)" ]; then
-            echo "Error: dist directory is empty"
-            exit 1
-          fi
-          echo "Generated files:"
-          ls -la dist/
-          
-      # Create or update output branch with generated files
-      - name: Create/Update output branch
-        run: |
-          # Configure git
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          
-          # Set up authentication
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          
-          # Create output branch if it doesn't exist
-          if ! git show-ref --verify --quiet refs/heads/output; then
-            echo "Creating output branch..."
-            git checkout --orphan output
-            git rm -rf .
-          else
-            echo "Switching to existing output branch..."
-            git checkout output
-          fi
-          
-          # Copy generated files
-          cp -r dist/* .
-          
-          # Add and commit files
-          git add .
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Update snake animation - $(date)"
-            git push origin output
-          fi
 
