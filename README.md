@@ -10,9 +10,18 @@
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/michaelchou64/michaelchou64/output/github-contribution-grid-snake.svg">
   </picture>
 
-  ![Michael's GitHub stats](https://github-readme-stats.vercel.app/api?username=michaelchou64&count_private=true@show_icons=true&theme=merko&card_width=500px)
+  <div>&nbsp;</div>
 
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=michaelchou64&show_icons=true&theme=merko" />
+  </a>
+  <!-- <a href="https://github.com/anuraghazra/convoychat">
+    <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=michaelchou64&layout=compact&langs_count=8&card_width=320" />
+  </a> -->
+  
 </div> 
+
+
 
 <!--
 **michaelchou64/michaelchou64** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
