@@ -1,10 +1,14 @@
 <div align="center">
 
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/michaelchou64/michaelchou64/output/github-contribution-grid-snake-dark.svg">
-<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/michaelchou64/michaelchou64/output/github-contribution-grid-snake.svg">
-<img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/michaelchou64/michaelchou64/output/github-contribution-grid-snake.svg">
-</picture>
+  <div>
+    <img src="https://komarev.com/ghpvc/?username=michaelchou64&label=Views&color=orange&style=flat" alt="访问量" />&emsp;
+  </div>
+
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/michaelchou64/michaelchou64/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/michaelchou64/michaelchou64/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/michaelchou64/michaelchou64/output/github-contribution-grid-snake.svg">
+  </picture>
 
 </div> 
 
