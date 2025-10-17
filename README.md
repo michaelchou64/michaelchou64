@@ -19,13 +19,6 @@
     <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=michaelchou64&layout=compact&langs_count=8&card_width=320" />
   </a> -->
 
-
-
-<p align="center">
-     <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
-</p>
-
-  
 </div> 
 
 
@@ -44,3 +37,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+<p align="center">
+     <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
+</p>
