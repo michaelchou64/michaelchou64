@@ -10,9 +10,9 @@
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/michaelchou64/michaelchou64/output/github-contribution-grid-snake.svg">
   </picture>
 
-</div> 
+  ![Michael's GitHub stats](https://github-readme-stats.vercel.app/api?username=michaelchou64&count_private=true@show_icons=true&theme=merko&card_width=500px)
 
-## Hi there 👋
+</div> 
 
 <!--
 **michaelchou64/michaelchou64** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
